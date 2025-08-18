@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import HomePage from "./HomePage";
 
 export default function App(){
   return (
@@ -18,6 +19,7 @@ export default function App(){
         </nav>
         <main className="container mx-auto p-8">
           <Routes>
+            <Route path="/" element={<HomePage />} />
             <Route path="/" element={<Home/>} />
             <Route path="/courses" element={<Courses/>} />
             <Route path="/dashboard" element={<Dashboard/>} />
