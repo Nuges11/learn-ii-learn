@@ -46,4 +46,23 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+      {/* Success Stories Section */}
+      <section className="py-20 text-center">
+        <h2 className="text-3xl font-bold mb-8">Success Stories</h2>
+        <div className="max-w-3xl mx-auto">
+          <div className="bg-white rounded-xl p-6 shadow mb-6">
+            <p className="italic text-gray-700 mb-2">
+              “Learn ii Learn helped me gain the confidence to pursue my dreams.”
+            </p>
+            <h4 className="font-semibold">– Adeola O.</h4>
+          </div>
+          <div className="bg-white rounded-xl p-6 shadow mb-6">
+            <p className="italic text-gray-700 mb-2">
+              “The mentorship support was life changing for me!”
+            </p>
+            <h4 className="font-semibold">– Chinedu K.</h4>
+          </div>
+        </div>
+      </section>
+
 export default HomePage;
