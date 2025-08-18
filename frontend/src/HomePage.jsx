@@ -84,5 +84,15 @@ const HomePage = () => {
           Explore Simulations
         </button>
       </section>
+      {/* Become A Tutor Section */}
+      <section className="py-20 bg-gray-50 text-center">
+        <h2 className="text-3xl font-bold mb-4">Become a Tutor</h2>
+        <p className="max-w-2xl mx-auto text-gray-600 mb-6">
+          Join us in creating opportunities — teach, guide and inspire students by becoming a Learn ii Learn tutor.
+        </p>
+        <button className="bg-green-700 text-white px-6 py-3 rounded-full">
+          Apply as Tutor
+        </button>
+      </section>
 
 export default HomePage;
