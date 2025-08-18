@@ -19,5 +19,12 @@ const HomePage = () => {
     </div>
   );
 };
-
+      {/* About Section */}
+      <section className="py-20 bg-gray-50 text-center">
+        <h2 className="text-3xl font-bold mb-4">About Learn ii Learn</h2>
+        <p className="max-w-3xl mx-auto text-gray-600">
+          Learn ii Learn is a platform committed to removing barriers and providing quality education,
+          mentorship, and practical learning opportunities to everyone — for free.
+        </p>
+      </section>
 export default HomePage;
