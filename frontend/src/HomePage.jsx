@@ -74,4 +74,15 @@ const HomePage = () => {
           Request Mentorship
         </button>
       </section>
+      {/* Job Simulations Section */}
+      <section className="py-20 text-center">
+        <h2 className="text-3xl font-bold mb-4">Job Simulations</h2>
+        <p className="max-w-2xl mx-auto text-gray-600 mb-6">
+          Test real-world skills with virtual projects from our partner companies.
+        </p>
+        <button className="bg-green-700 text-white px-6 py-3 rounded-full">
+          Explore Simulations
+        </button>
+      </section>
+
 export default HomePage;
