@@ -64,5 +64,14 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-
+      {/* Mentorship Section */}
+      <section className="py-20 bg-gray-50 text-center">
+        <h2 className="text-3xl font-bold mb-4">Mentorship</h2>
+        <p className="max-w-2xl mx-auto text-gray-600 mb-6">
+          Get paired with experienced tutors and industry professionals to guide your learning journey.
+        </p>
+        <button className="bg-green-700 text-white px-6 py-3 rounded-full">
+          Request Mentorship
+        </button>
+      </section>
 export default HomePage;
