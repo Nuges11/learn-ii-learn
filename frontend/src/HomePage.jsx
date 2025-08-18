@@ -94,5 +94,29 @@ const HomePage = () => {
           Apply as Tutor
         </button>
       </section>
-
+      {/* Footer */}
+      <footer className="bg-green-800 text-white py-10">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            {/* Logo */}
+            <div className="font-bold text-xl">Learn ii Learn</div>
+            {/* Links */}
+            <div className="space-x-6">
+              <a href="/" className="hover:underline">Home</a>
+              <a href="/courses" className="hover:underline">Courses</a>
+              <a href="/mentorship" className="hover:underline">Mentorship</a>
+              <a href="/simulation" className="hover:underline">Simulations</a>
+            </div>
+            {/* Social Icons (placeholder links) */}
+            <div className="space-x-4">
+              <a href="#"><i className="fab fa-instagram"></i></a>
+              <a href="#"><i className="fab fa-linkedin"></i></a>
+              <a href="#"><i className="fab fa-twitter"></i></a>
+            </div>
+          </div>
+          <div className="mt-8 text-center text-sm text-gray-200">
+            © {new Date().getFullYear()} Learn ii Learn. All rights reserved.
+          </div>
+        </div>
+      </footer>
 export default HomePage;
