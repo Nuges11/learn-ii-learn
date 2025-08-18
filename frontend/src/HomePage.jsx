@@ -27,4 +27,23 @@ const HomePage = () => {
           mentorship, and practical learning opportunities to everyone — for free.
         </p>
       </section>
+      {/* Browse Courses Section */}
+      <section className="py-20 text-center">
+        <h2 className="text-3xl font-bold mb-8">Browse Courses</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-6">
+          {/* Course Card Placeholder */}
+          <div className="bg-white rounded-xl shadow p-6">
+            <h3 className="font-semibold mb-2">Course Title 1</h3>
+            <p className="text-gray-600">Brief course description goes here.</p>
+          </div>
+          <div className="bg-white rounded-xl shadow p-6">
+            <h3 className="font-semibold mb-2">Course Title 2</h3>
+            <p className="text-gray-600">Brief course description goes here.</p>
+          </div>
+          <div className="bg-white rounded-xl shadow p-6">
+            <h3 className="font-semibold mb-2">Course Title 3</h3>
+            <p className="text-gray-600">Brief course description goes here.</p>
+          </div>
+        </div>
+      </section>
 export default HomePage;
