@@ -1,35 +1,34 @@
-
-import React from 'react';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import HomePage from "./HomePage";
+import Login from "./Login";
+import Courses from "./Courses";
+import Dashboard from "./Dashboard";
 
-export default function App(){
+function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-screen bg-gray-50">
-        <nav className="p-4 bg-green-800 text-white">
-          <div className="container mx-auto flex justify-between">
-            <div className="font-bold">Learn ii Learn</div>
-            <div className="space-x-4">
-              <Link to="/">Home</Link>
-              <Link to="/courses">Courses</Link>
-              <Link to="/dashboard">Dashboard</Link>
-            </div>
-          </div>
-        </nav>
-        <main className="container mx-auto p-8">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/" element={<Home/>} />
-            <Route path="/courses" element={<Courses/>} />
-            <Route path="/dashboard" element={<Dashboard/>} />
-          </Routes>
-        </main>
-      </div>
+      {/* Navbar */}
+      <nav className="bg-white shadow p-4 flex justify-between items-center">
+        <div className="font-bold text-green-800 text-xl">Learn ii Learn</div>
+        <div className="space-x-4 text-sm">
+          <Link to="/">Home</Link>
+          <Link to="/courses">Courses</Link>
+          <Link to="/mentorship">Mentorship</Link>
+          <Link to="/simulations">Simulations</Link>
+          <Link to="/login">Login</Link>
+        </div>
+      </nav>
+
+      {/* Page Routes */}
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/courses" element={<Courses />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
     </BrowserRouter>
   );
 }
 
-function Home(){ return <div><h1 className="text-3xl font-bold">Welcome to Learn ii Learn</h1><p className="mt-4">Placeholder courses and content.</p></div> }
-function Courses(){ return <div><h2 className="text-2xl font-semibold">Courses (placeholders)</h2></div> }
-function Dashboard(){ return <div><h2 className="text-2xl font-semibold">Dashboard (role-based views)</h2></div> }
+export default App;
